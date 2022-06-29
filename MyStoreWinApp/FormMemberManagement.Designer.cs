@@ -46,7 +46,7 @@
             this.groupSearchInput = new System.Windows.Forms.GroupBox();
             this.buttonClearSearch = new System.Windows.Forms.Button();
             this.buttonSearch = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelKeyword = new System.Windows.Forms.Label();
             this.textBoxSearchKeyword = new System.Windows.Forms.TextBox();
             this.groupBoxSearchBy = new System.Windows.Forms.GroupBox();
             this.radioButtonSearchByName = new System.Windows.Forms.RadioButton();
@@ -194,7 +194,7 @@
             // 
             this.groupSearchInput.Controls.Add(this.buttonClearSearch);
             this.groupSearchInput.Controls.Add(this.buttonSearch);
-            this.groupSearchInput.Controls.Add(this.label7);
+            this.groupSearchInput.Controls.Add(this.labelKeyword);
             this.groupSearchInput.Controls.Add(this.textBoxSearchKeyword);
             this.groupSearchInput.Enabled = false;
             this.groupSearchInput.Location = new System.Drawing.Point(20, 182);
@@ -224,14 +224,14 @@
             this.buttonSearch.UseVisualStyleBackColor = true;
             this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
-            // label7
+            // labelKeyword
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 56);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 20);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Keyword";
+            this.labelKeyword.AutoSize = true;
+            this.labelKeyword.Location = new System.Drawing.Point(6, 56);
+            this.labelKeyword.Name = "labelKeyword";
+            this.labelKeyword.Size = new System.Drawing.Size(67, 20);
+            this.labelKeyword.TabIndex = 1;
+            this.labelKeyword.Text = "Keyword";
             // 
             // textBoxSearchKeyword
             // 
@@ -400,14 +400,13 @@
         private Button buttonDelete;
         private GroupBox groupSearchInput;
         private TextBox textBoxSearchKeyword;
-        private Label label7;
+        private Label labelKeyword;
         private Button buttonSearch;
         private Button buttonClearSearch;
         private GroupBox groupBoxSearchBy;
         private RadioButton radioButtonSearchById;
         private GroupBox groupBoxFilterByCountry;
         private RadioButton radioButtonSearchByName;
-        private ComboBox comboBox2;
         private ComboBox comboBoxFilterByCity;
         private Label label9;
         private Label labelFilterByCity;

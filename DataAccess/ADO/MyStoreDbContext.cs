@@ -160,10 +160,15 @@ namespace DataAccess.ADO
                     };
                     return DataProvider.Insert(SQLInsert, CommandType.Text, parameters.ToArray()) == 1;
                 }
-                else
+                else if (existAccount.MemberId == account.MemberId)
                 {
-                    throw new Exception("The ID or email is already used by another account.");
+                    throw new Exception("Member ID already used by another account.");
                 }
+                else if (existAccount.Email.ToLower().Equals(account.Email.ToLower()))
+                {
+                    throw new Exception("Email is already used by another account.");
+                }
+                return false;
             }
             catch (Exception ex)
             {

@@ -84,7 +84,7 @@ namespace MyStoreWinApp
                 MemberId = id,
                 Password = password,
                 MemberName = name,
-                Email = email,
+                Email = email.ToLower(),
                 City = city,
                 Country = country
             };
