@@ -93,7 +93,7 @@
             this.textBoxMemberEmail.Location = new System.Drawing.Point(753, 45);
             this.textBoxMemberEmail.Name = "textBoxMemberEmail";
             this.textBoxMemberEmail.Size = new System.Drawing.Size(361, 27);
-            this.textBoxMemberEmail.TabIndex = 1;
+            this.textBoxMemberEmail.TabIndex = 3;
             // 
             // labelMemberCity
             // 
@@ -109,7 +109,7 @@
             this.textBoxMemberCity.Location = new System.Drawing.Point(1306, 49);
             this.textBoxMemberCity.Name = "textBoxMemberCity";
             this.textBoxMemberCity.Size = new System.Drawing.Size(361, 27);
-            this.textBoxMemberCity.TabIndex = 1;
+            this.textBoxMemberCity.TabIndex = 5;
             // 
             // labelMemberName
             // 
@@ -125,7 +125,7 @@
             this.textBoxMemberName.Location = new System.Drawing.Point(135, 111);
             this.textBoxMemberName.Name = "textBoxMemberName";
             this.textBoxMemberName.Size = new System.Drawing.Size(361, 27);
-            this.textBoxMemberName.TabIndex = 1;
+            this.textBoxMemberName.TabIndex = 2;
             // 
             // labelMemberPassword
             // 
@@ -142,7 +142,7 @@
             this.textBoxMemberPassword.Name = "textBoxMemberPassword";
             this.textBoxMemberPassword.PasswordChar = '*';
             this.textBoxMemberPassword.Size = new System.Drawing.Size(361, 27);
-            this.textBoxMemberPassword.TabIndex = 1;
+            this.textBoxMemberPassword.TabIndex = 4;
             // 
             // labelMemberCountry
             // 
@@ -158,14 +158,14 @@
             this.textBoxMemberCountry.Location = new System.Drawing.Point(1306, 115);
             this.textBoxMemberCountry.Name = "textBoxMemberCountry";
             this.textBoxMemberCountry.Size = new System.Drawing.Size(361, 27);
-            this.textBoxMemberCountry.TabIndex = 1;
+            this.textBoxMemberCountry.TabIndex = 6;
             // 
             // buttonLoad
             // 
             this.buttonLoad.Location = new System.Drawing.Point(20, 393);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(94, 29);
-            this.buttonLoad.TabIndex = 2;
+            this.buttonLoad.TabIndex = 12;
             this.buttonLoad.Text = "Load";
             this.buttonLoad.UseVisualStyleBackColor = true;
             this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
@@ -175,7 +175,7 @@
             this.buttonNew.Location = new System.Drawing.Point(829, 393);
             this.buttonNew.Name = "buttonNew";
             this.buttonNew.Size = new System.Drawing.Size(94, 29);
-            this.buttonNew.TabIndex = 2;
+            this.buttonNew.TabIndex = 13;
             this.buttonNew.Text = "New";
             this.buttonNew.UseVisualStyleBackColor = true;
             this.buttonNew.Click += new System.EventHandler(this.buttonNew_Click);
@@ -185,7 +185,7 @@
             this.buttonDelete.Location = new System.Drawing.Point(1590, 393);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(94, 29);
-            this.buttonDelete.TabIndex = 2;
+            this.buttonDelete.TabIndex = 13;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = true;
             this.buttonDelete.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonDelete_MouseClick);
@@ -209,7 +209,7 @@
             this.buttonClearSearch.Location = new System.Drawing.Point(372, 117);
             this.buttonClearSearch.Name = "buttonClearSearch";
             this.buttonClearSearch.Size = new System.Drawing.Size(94, 29);
-            this.buttonClearSearch.TabIndex = 4;
+            this.buttonClearSearch.TabIndex = 8;
             this.buttonClearSearch.Text = "Clear";
             this.buttonClearSearch.UseVisualStyleBackColor = true;
             this.buttonClearSearch.Click += new System.EventHandler(this.buttonClearSearch_Click);
@@ -219,7 +219,7 @@
             this.buttonSearch.Location = new System.Drawing.Point(105, 117);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(94, 29);
-            this.buttonSearch.TabIndex = 4;
+            this.buttonSearch.TabIndex = 7;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = true;
             this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
@@ -239,7 +239,7 @@
             this.textBoxSearchKeyword.Name = "textBoxSearchKeyword";
             this.textBoxSearchKeyword.PlaceholderText = "Enter search keyword ...";
             this.textBoxSearchKeyword.Size = new System.Drawing.Size(361, 27);
-            this.textBoxSearchKeyword.TabIndex = 0;
+            this.textBoxSearchKeyword.TabIndex = 6;
             // 
             // groupBoxSearchBy
             // 
@@ -260,7 +260,7 @@
             this.radioButtonSearchByName.Location = new System.Drawing.Point(18, 49);
             this.radioButtonSearchByName.Name = "radioButtonSearchByName";
             this.radioButtonSearchByName.Size = new System.Drawing.Size(150, 24);
-            this.radioButtonSearchByName.TabIndex = 4;
+            this.radioButtonSearchByName.TabIndex = 9;
             this.radioButtonSearchByName.TabStop = true;
             this.radioButtonSearchByName.Text = "By Member Name";
             this.radioButtonSearchByName.UseVisualStyleBackColor = true;
@@ -272,7 +272,7 @@
             this.radioButtonSearchById.Location = new System.Drawing.Point(18, 92);
             this.radioButtonSearchById.Name = "radioButtonSearchById";
             this.radioButtonSearchById.Size = new System.Drawing.Size(65, 24);
-            this.radioButtonSearchById.TabIndex = 4;
+            this.radioButtonSearchById.TabIndex = 10;
             this.radioButtonSearchById.Text = "By ID";
             this.radioButtonSearchById.UseVisualStyleBackColor = true;
             // 
@@ -298,7 +298,7 @@
             this.comboBoxFilterByCountry.Location = new System.Drawing.Point(116, 45);
             this.comboBoxFilterByCountry.Name = "comboBoxFilterByCountry";
             this.comboBoxFilterByCountry.Size = new System.Drawing.Size(361, 28);
-            this.comboBoxFilterByCountry.TabIndex = 1;
+            this.comboBoxFilterByCountry.TabIndex = 10;
             this.comboBoxFilterByCountry.SelectedIndexChanged += new System.EventHandler(this.comboBoxFilterByCountry_SelectedIndexChanged);
             // 
             // comboBoxFilterByCity
@@ -308,7 +308,7 @@
             this.comboBoxFilterByCity.Location = new System.Drawing.Point(116, 88);
             this.comboBoxFilterByCity.Name = "comboBoxFilterByCity";
             this.comboBoxFilterByCity.Size = new System.Drawing.Size(361, 28);
-            this.comboBoxFilterByCity.TabIndex = 0;
+            this.comboBoxFilterByCity.TabIndex = 11;
             this.comboBoxFilterByCity.TabStop = false;
             this.comboBoxFilterByCity.SelectedIndexChanged += new System.EventHandler(this.comboBoxFilterByCity_SelectedIndexChanged);
             // 
@@ -339,7 +339,7 @@
             this.dataGridViewMembers.RowHeadersWidth = 51;
             this.dataGridViewMembers.RowTemplate.Height = 29;
             this.dataGridViewMembers.Size = new System.Drawing.Size(1664, 386);
-            this.dataGridViewMembers.TabIndex = 4;
+            this.dataGridViewMembers.TabIndex = 14;
             this.dataGridViewMembers.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewMembers_CellMouseDoubleClick);
             // 
             // FormMemberManagement

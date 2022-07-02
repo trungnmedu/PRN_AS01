@@ -20,7 +20,7 @@ namespace DataAccess.ADO
             }
         }
 
-        public IEnumerable<MemberObject>? GetListCar()
+        public IEnumerable<MemberObject>? GetListMembers()
         {
             if (DataProvider == null)
             {
@@ -137,7 +137,7 @@ namespace DataAccess.ADO
             return account;
         }
 
-        public bool AddNew(MemberObject account)
+        public bool CreateMember(MemberObject account)
         {
             try
             {
@@ -180,20 +180,19 @@ namespace DataAccess.ADO
             }
         }
 
-        public bool Update(MemberObject account)
+        public bool UpdateMember(MemberObject account)
         {
-            if (DataProvider == null)
-            {
-                return false;
-            }
             try
             {
+                if (DataProvider == null )
+                {
+                    return false;
+                }
                 MemberObject? existAccount = FindAccountMemberByIdOrEmail(account.MemberId, account.Email);
 
                 if (existAccount == null)
                 {
                     throw new Exception("This account not exist.");
-
                 }
                 else if (account != null && existAccount.MemberId != account.MemberId)
                 {
@@ -201,16 +200,20 @@ namespace DataAccess.ADO
                 }
 
 
+                if (account == null)
+                {
+                    return false;
+                }
                 string SQLUpdate = "UPDATE members SET full_name=@FullName, password=@Password, email=@Email, city=@City, country=@Country WHERE id=@Id";
                 var parameters = new List<SqlParameter>
-                    {
-                        DataProvider.CreateParameter("@Id", 4, account.MemberId, DbType.Int32),
-                        DataProvider.CreateParameter("@FullName", 50, account.MemberName, DbType.String),
-                        DataProvider.CreateParameter("@Password", 50, account.Password, DbType.String),
-                        DataProvider.CreateParameter("@Email", 50, account.Email, DbType.String),
-                        DataProvider.CreateParameter("@City", 50, account.City, DbType.String),
-                        DataProvider.CreateParameter("@Country", 50, account.Country, DbType.String)
-                    };
+                {
+                    DataProvider.CreateParameter("@Id", 4, account.MemberId, DbType.Int32),
+                    DataProvider.CreateParameter("@FullName", 50, account.MemberName, DbType.String),
+                    DataProvider.CreateParameter("@Password", 50, account.Password, DbType.String),
+                    DataProvider.CreateParameter("@Email", 50, account.Email, DbType.String),
+                    DataProvider.CreateParameter("@City", 50, account.City, DbType.String),
+                    DataProvider.CreateParameter("@Country", 50, account.Country, DbType.String)
+                };
                 return DataProvider.Update(SQLUpdate, CommandType.Text, parameters.ToArray()) == 1;
             }
             catch (Exception ex)
@@ -222,7 +225,7 @@ namespace DataAccess.ADO
                 CloseConnection();
             }
         }
-        public bool Remove(int memberId)
+        public bool RemoveMember(int memberId)
         {
             if (DataProvider == null)
             {

@@ -64,7 +64,7 @@
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.PlaceholderText = "Enter your email....";
             this.textBoxEmail.Size = new System.Drawing.Size(312, 30);
-            this.textBoxEmail.TabIndex = 2;
+            this.textBoxEmail.TabIndex = 1;
             // 
             // textBoxPassword
             // 
@@ -74,14 +74,14 @@
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.PlaceholderText = "Enter your password...";
             this.textBoxPassword.Size = new System.Drawing.Size(312, 30);
-            this.textBoxPassword.TabIndex = 3;
+            this.textBoxPassword.TabIndex = 2;
             // 
             // buttonLogin
             // 
             this.buttonLogin.Location = new System.Drawing.Point(134, 217);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(94, 29);
-            this.buttonLogin.TabIndex = 4;
+            this.buttonLogin.TabIndex = 3;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = true;
             this.buttonLogin.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonLogin_MouseClick);
@@ -91,7 +91,7 @@
             this.buttonCancel.Location = new System.Drawing.Point(352, 217);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(94, 29);
-            this.buttonCancel.TabIndex = 5;
+            this.buttonCancel.TabIndex = 4;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);

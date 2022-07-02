@@ -59,7 +59,7 @@
             this.textBoxMemberName.Location = new System.Drawing.Point(143, 95);
             this.textBoxMemberName.Name = "textBoxMemberName";
             this.textBoxMemberName.Size = new System.Drawing.Size(262, 27);
-            this.textBoxMemberName.TabIndex = 1;
+            this.textBoxMemberName.TabIndex = 2;
             // 
             // labelId
             // 
@@ -91,7 +91,7 @@
             this.textBoxEmail.Location = new System.Drawing.Point(143, 152);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(262, 27);
-            this.textBoxEmail.TabIndex = 1;
+            this.textBoxEmail.TabIndex = 3;
             // 
             // labelPassword
             // 
@@ -108,7 +108,7 @@
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(262, 27);
-            this.textBoxPassword.TabIndex = 1;
+            this.textBoxPassword.TabIndex = 4;
             // 
             // labelCity
             // 
@@ -124,7 +124,7 @@
             this.textBoxCity.Location = new System.Drawing.Point(143, 270);
             this.textBoxCity.Name = "textBoxCity";
             this.textBoxCity.Size = new System.Drawing.Size(262, 27);
-            this.textBoxCity.TabIndex = 1;
+            this.textBoxCity.TabIndex = 5;
             // 
             // labelCountry
             // 
@@ -140,7 +140,7 @@
             this.textBoxCountry.Location = new System.Drawing.Point(143, 331);
             this.textBoxCountry.Name = "textBoxCountry";
             this.textBoxCountry.Size = new System.Drawing.Size(262, 27);
-            this.textBoxCountry.TabIndex = 1;
+            this.textBoxCountry.TabIndex = 6;
             // 
             // buttonUpdate
             // 
@@ -157,7 +157,7 @@
             this.buttonCancel.Location = new System.Drawing.Point(270, 405);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(94, 29);
-            this.buttonCancel.TabIndex = 2;
+            this.buttonCancel.TabIndex = 8;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
@@ -167,7 +167,7 @@
             this.buttonCreate.Location = new System.Drawing.Point(64, 405);
             this.buttonCreate.Name = "buttonCreate";
             this.buttonCreate.Size = new System.Drawing.Size(94, 29);
-            this.buttonCreate.TabIndex = 2;
+            this.buttonCreate.TabIndex = 7;
             this.buttonCreate.Text = "Create";
             this.buttonCreate.UseVisualStyleBackColor = true;
             this.buttonCreate.Click += new System.EventHandler(this.buttonCreate_Click);
